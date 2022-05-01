@@ -1,0 +1,45 @@
+{
+  "extName": {
+    "message": "万能验证码自动输入",
+    "description": "万能验证码自动输入"
+  },
+  "instrP1": {
+    "message": "用户在接受$name$服务之前，请务必仔细阅读声明并同意",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "WebInfo"
+      }
+    }
+  },
+  "pluginDesc": {
+    "message": "自动识别验证码并输入"
+  },
+  "Introduction": {
+    "message": "安装完毕之后你需要注册登录帐号,而后的时间当你访问带有验证码的网站时,插件会自动识别网站中的验证码图片,并且将识别结果写入到输入框."
+  },
+  "CreateRulesManually": {
+    "message": "对于插件没有识别出img与input元素的网站,你可以右键菜单手动创建规则."
+  },
+  "AboutFees": {
+    "message": "新注册账户会赠送100次免费识别,免费份额使用完后,你可以根据使用感受选择充值.\n              图片验证码识别0.01元/次."
+  },
+  "EarlierVersion": {
+    "message": "早期版本"
+  },
+  "SupportSite": {
+    "message": "支援网站"
+  },
+  "DevelopmentCooperation": {
+    "message": "开发合作"
+  },
+  "IntroductionTitle": {
+    "message": "使用介绍"
+  },
+  "TollTitle": {
+    "message": "关于费用"
+  },
+  "UrlTitle": {
+    "message": "相关链接"
+  }
+}

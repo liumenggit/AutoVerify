@@ -1,0 +1,11 @@
+.ant-tabs-bar {
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    outline: none;
+    transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.divcontent {
+    width: 360px;
+    height: 600px;
+}

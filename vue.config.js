@@ -1,4 +1,5 @@
 module.exports = {
+  lintOnSave: false,
   pages: {
     popup: {
       template: 'public/browser-extension.html',

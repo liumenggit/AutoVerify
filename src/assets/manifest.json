@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "__MSG_extName__",
   "homepage_url": "https://www.wan7.cc/",
   "description": "__MSG_pluginDesc__",
@@ -8,16 +8,26 @@
     "activeTab",
     "tabs",
     "storage",
-    "*://py.wan7.cc/*",
-    "<all_urls>",
     "cookies",
     "contextMenus"
   ],
+  "host_permissions": [
+    "*://py.wan7.cc/*",
+    "<all_urls>"
+  ],
+  "optional_permissions": [
+    "unlimitedStorage"
+  ],
+  "content_security_policy": {
+    "extension_pages": "...",
+    "sandbox": "..."
+  },
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
+  "action": {},
   "background": {
     "scripts": [
       "js/background.js"
@@ -47,6 +57,5 @@
       ],
       "run_at": "document_start"
     }
-  ],
-  "content_security_policy": "style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval' https://cdn.bootcss.com; object-src 'self' ;"
+  ]
 }

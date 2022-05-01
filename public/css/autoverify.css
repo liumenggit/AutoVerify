@@ -1,0 +1,92 @@
+.autoverify-btn {
+    color: #1890ff;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    height: 24px;
+    padding: 0px 7px;
+    font-size: 14px;
+    border-radius: 2px;
+    outline: 0;
+}
+
+.autoverify-popover-inner {
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px #00000026;
+    box-shadow: 0 0 8px #00000026;
+    z-index: 999;
+    right: 0px;
+    top: -20px;
+    position: absolute;
+    display: none;
+}
+
+.ant-notification-notice {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    overflow: hidden;
+    padding: 16px 24px;
+    position: relative
+}
+
+.autoverify-tip {
+    position: fixed;
+    left: 20px;
+    padding: 16px 10px;
+    top: 30px;
+    min-width: 150px;
+    max-width: 700px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    z-index: 999;
+    background-clip: padding-box;
+    box-shadow: 0 2px 8px #00000026;
+    box-shadow: 0 0 8px #00000026;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    transition: top .4s;
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}

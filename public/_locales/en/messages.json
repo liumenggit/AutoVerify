@@ -1,6 +1,33 @@
 {
   "extName": {
-    "message": "autoverify",
-    "description": ""
+    "message": "AutoVerify",
+    "description": "Universal verification code automatic input"
+  },
+  "Introduction": {
+    "message": "After the installation is complete, you need to register a login account, and then when you visit a website with a verification code, the plug-in will automatically recognize the verification code picture in the website, and write the recognition result into the input box."
+  },
+  "CreateRulesManually": {
+    "message": "For websites where the plugin does not recognize img and input elements, you can manually create rules from the right-click menu."
+  },
+  "AboutFees": {
+    "message": "The newly registered account will be given 100 free identifications. After the free share is used up, you can choose to recharge according to your experience. Picture verification code identification is 0.01 yuan/time."
+  },
+  "EarlierVersion": {
+    "message": "earlier version"
+  },
+  "SupportSite": {
+    "message": "Support site"
+  },
+  "DevelopmentCooperation": {
+    "message": "development cooperation"
+  },
+  "IntroductionTitle": {
+    "message": "Introduction"
+  },
+  "TollTitle": {
+    "message": "About fees"
+  },
+  "UrlTitle": {
+    "message": "Related Links"
   }
 }
