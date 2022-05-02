@@ -12,7 +12,7 @@
         type="email"
       >
         <template #addonAfter>
-          <a-button :disabled="formState.email === ''" size="small" type="link" @click="SendEmail(email)">发送</a-button>
+          <a-button :disabled="formState.email === ''" size="small" type="link" @click="SendEmail(formState.email)">发送</a-button>
         </template>
       </a-input>
 
@@ -115,6 +115,7 @@ export default {
     },
     handleFinish (value) {
       this.ResetPass(value)
+      this.SwitchDrawer()
     }
   }
 }

@@ -357,12 +357,12 @@ export default defineComponent({
     Register (RegisterForm) {
       axios.post('http://py.wan7.cc/user/register/', RegisterForm)
         .then(function (response) {
-          alert(response.status)
-          alert(JSON.stringify(response.data))
-          message.info('请查看邮件激活账户', JSON.stringify(response))
+          // alert(response.status)
+          // alert(JSON.stringify(response.data))
+          message.info('请查看邮件激活账户')
         })
         .catch(function (error) {
-          message.warn('失败', JSON.stringify(error))
+          message.warn('失败')
         })
     },
     // 登录
@@ -448,11 +448,11 @@ export default defineComponent({
     SendEmail (email) {
       axios.post('http://py.wan7.cc/user/password/reset/', { email: email })
         .then(function (response) {
-          alert(JSON.stringify(response.data))
-          message.success('邮件发送成功' + JSON.stringify(response))
+          // alert(JSON.stringify(response.data))
+          message.success('邮件发送成功')
         })
         .catch(function (error) {
-          alert(JSON.stringify(error))
+          // alert(JSON.stringify(error))
           message.warn('邮件发送失败')
         })
     },
@@ -460,6 +460,7 @@ export default defineComponent({
     ResetPass (ResetPassForm) {
       axios.post('http://py.wan7.cc/user/password/reset/confirm/' + ResetPassForm.uid + '/' + ResetPassForm.token + '/', ResetPassForm)
         .then(function (response) {
+          // alert(JSON.stringify(response))
           message.success('密码修改成功')
         })
         .catch(function (error) {
@@ -479,7 +480,7 @@ export default defineComponent({
         that.OcrPagination.current = pagination.current
         that.OcrDataSource = response.data.results
       }).catch(function (error) {
-        message.warn('历史拉取失败' + JSON.stringify(error))
+        message.warn('历史拉取失败')
       })
     },
     // 清除本地规则
