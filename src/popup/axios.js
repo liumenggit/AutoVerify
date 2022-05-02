@@ -16,11 +16,11 @@ let isRefreshing = false
 let requests = []
 // const baseURL = 'http://py.wam7.cc'
 // axios.defaults.baseURL = baseURL
-if (localStorage.getItem('access_token')) {
-  axios.defaults.headers.Authorization = 'Bearer ' + localStorage.getItem('access_token')
-}
 axios.interceptors.request.use(
   config => {
+    if (localStorage.getItem('access_token')) { //判断token是否存在
+      config.headers.Authorization = 'Bearer ' + localStorage.getItem('access_token')
+    }
     // alert('拦截到请求' + JSON.stringify(config.headers))
     return config
   }, error => {
