@@ -9,3 +9,4 @@
 新注册账户会赠送100次免费识别,免费份额使用完后,你可以根据使用感受选择充值. 图片验证码识别0.02元/次.
 ### 相关链接
  [早期版本](https://greasyfork.org/zh-CN/scripts/397139-%E4%B8%87%E8%83%BD%E9%AA%8C%E8%AF%81%E7%A0%81%E8%87%AA%E5%8A%A8%E8%BE%93%E5%85%A5)
+ [最新版本](https://github.com/liumenggit/AutoVerify/releases/)
